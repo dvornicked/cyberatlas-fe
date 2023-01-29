@@ -5,6 +5,7 @@ export default async function Home() {
 	const games = await getAllGames()
 	return (
 		<main className="min-h-screen">
+			<h1 className="my-5 text-center text-4xl font-bold">Games</h1>
 			<ul>
 				{games.map(game => (
 					<li
